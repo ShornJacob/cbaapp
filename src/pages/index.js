@@ -14,11 +14,11 @@ export default () => {
             <h3 class="title has-text-black">Login</h3>
             <hr class="login-hr"></hr>
             <p class="subtitle has-text-black">Please login to proceed.</p>
-            <div class="box">
-              <figure class="avatar">
-              <FontAwesomeIcon icon={faUser} />
-              </figure>
-            </div>
+   
+             <span class="icon is-large">
+             <FontAwesomeIcon icon={faUser} className="fas fa-2x" />
+             </span>
+             
           </div>
         </div>
       </div>
@@ -58,8 +58,10 @@ export default () => {
 
 //https://bulma.io/documentation/elements/box/
 //A white box to contain other elements
+//The .box element is simply a container with a shadow, a border, a radius, and some padding.
 
-//https://bulma.io/documentation/elements/image/
-//Because images can take a few seconds to load (or not at all),
-//use the .image container to specify a precisely sized container so that your layout isn't broken because
-// of image loading or image errors.
+
+//https://bulma.io/documentation/elements/icon/
+//The icon element is a container for any type of icon font. 
+//is-large container class fas fa-3x fa class
+//className="fas fa-3x" react style
