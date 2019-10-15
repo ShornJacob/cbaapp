@@ -11,3 +11,7 @@ in gatsby-config.js
 https://www.gatsbyjs.org/docs/bulma/
 add mystyles.scss
 --------------------------------------------------------------------------------------------------------------------------------
+
+Debug Css
+Add debug.css file
+Add gastby-browser.js and import debug.css
