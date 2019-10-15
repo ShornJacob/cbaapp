@@ -4,21 +4,46 @@ import { faUser } from "@fortawesome/free-solid-svg-icons"
 import "./mystyles.scss"
 
 export default () => {
-
-
   return (
-    <section class="hero is-success is-fullheight">
+    <section class="hero is-fullheight">
       <div class="hero-body">
         <div class="container has-text-centered">
           <div class="column is-4 is-offset-4">
             <h3 class="title has-text-black">Login</h3>
             <hr class="login-hr"></hr>
             <p class="subtitle has-text-black">Please login to proceed.</p>
-   
-             <span class="icon is-large">
-             <FontAwesomeIcon icon={faUser} className="fas fa-2x" />
-             </span>
-             
+
+            <span class="icon is-large">
+              <FontAwesomeIcon icon={faUser} className="fas fa-2x" />
+            </span>
+
+            <form>
+              <div class="field">
+                <div class="control">
+                  <input
+                    class="input is-normal"
+                    type="email"
+                    placeholder="Your Email"
+                    autofocus=""
+                  />
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <input
+                    class="input is-normal"
+                    type="password"
+                    placeholder="Your Password"
+                  />
+                </div>
+              </div>
+
+              <button class="button is-block is-info is-normal is-fullwidth">
+                Login
+              </button>
+
+            </form>
           </div>
         </div>
       </div>
@@ -60,8 +85,21 @@ export default () => {
 //A white box to contain other elements
 //The .box element is simply a container with a shadow, a border, a radius, and some padding.
 
-
 //https://bulma.io/documentation/elements/icon/
-//The icon element is a container for any type of icon font. 
+//The icon element is a container for any type of icon font.
 //is-large container class fas fa-3x fa class
 //className="fas fa-3x" react style
+
+//https://bulma.io/documentation/form/general/
+//each control classses should be inside control container
+//When combining several controls in a form, use the .field class as a container, to keep the spacing consistent.
+
+
+//https://bulma.io/documentation/modifiers/responsive-helpers/
+//Show/hide content depending on the width of the viewport
+//dislay classes
+
+//https://bulma.io/documentation/elements/button/
+//The classic button, in different colors, sizes, and states
+//https://bulma.io/documentation/elements/button/#sizes
+//is-fullwidth
