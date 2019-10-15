@@ -1,24 +1,30 @@
 import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faUser } from "@fortawesome/free-solid-svg-icons"
 import "./mystyles.scss"
 
-export default () => (
-  <section class="hero is-success is-fullheight">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <div class="column is-4 is-offset-4">
-          <h3 class="title has-text-black">Login</h3>
-          <hr class="login-hr"></hr>
-          <p class="subtitle has-text-black">Please login to proceed.</p>
-          <div class="box">
-          <figure class="avatar">
-              
-          </figure>
+export default () => {
+
+
+  return (
+    <section class="hero is-success is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="column is-4 is-offset-4">
+            <h3 class="title has-text-black">Login</h3>
+            <hr class="login-hr"></hr>
+            <p class="subtitle has-text-black">Please login to proceed.</p>
+            <div class="box">
+              <figure class="avatar">
+              <FontAwesomeIcon icon={faUser} />
+              </figure>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-)
+    </section>
+  )
+}
 
 //Bulma Login Template
 //https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/login.html
